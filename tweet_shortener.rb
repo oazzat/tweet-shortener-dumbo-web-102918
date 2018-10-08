@@ -6,16 +6,19 @@ end
 def word_substituter (tweet)
   array = tweet.split(" ")
   replacements = dictionary
+  counter = 0 
+  new_array = []
   
   array.collect do |word|
-    new_word = word
     replacements.each do |key,val|
       
     if word.capitalize == (key.to_s).capitalize
-      new_word = val
+      new_array[counter] = val
+    else
+      new_array[counter] = word
     end
     end
-    word = new_word
+    counter += 1
   end
   array.join(" ")
 end 
