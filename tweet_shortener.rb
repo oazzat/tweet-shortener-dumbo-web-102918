@@ -8,14 +8,14 @@ def word_substituter (tweet)
   replacements = dictionary
   
   array.collect do |word|
-    
+    new_word = word
     replacements.each do |key,val|
       
     if word.capitalize == (key.to_s).capitalize
-      word = val
+      new_word = val
     end
     end
-    
+    new_word
   end
   array.join(" ")
 end 
