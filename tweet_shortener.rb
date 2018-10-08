@@ -14,8 +14,9 @@ def word_substituter (tweet)
     if word.capitalize == (key.to_s).capitalize
       word = val
     end
+    return word
+    end
     
-    end 
   end
   array.join(" ")
 end 
