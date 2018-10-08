@@ -13,11 +13,10 @@ def word_substituter (tweet)
     replacements.each do |key,val|
       
     if word.capitalize == (key.to_s).capitalize
-      new_array[counter] = val
-    else
-      new_array[counter] = word
+      word = val
     end
     end
+    new_array[counter] = word
     counter += 1
   end
   new_array.join(" ")
