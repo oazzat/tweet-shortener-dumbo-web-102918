@@ -46,4 +46,5 @@ def shortened_tweet_truncator(tweet)
     return shortened
   else
     return shortened + "..."
+  end
 end
