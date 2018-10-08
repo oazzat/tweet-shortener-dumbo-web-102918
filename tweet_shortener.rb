@@ -9,7 +9,7 @@ def word_substituter (tweet)
   counter = 0 
   new_array = []
   
-  array.collect do |word|
+  array.each do |word|
     replacements.each do |key,val|
       
     if word.capitalize == (key.to_s).capitalize
