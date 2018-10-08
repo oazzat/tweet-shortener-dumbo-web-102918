@@ -15,7 +15,7 @@ def word_substituter (tweet)
       new_word = val
     end
     end
-    new_word
+    word = new_word
   end
   array.join(" ")
 end 
