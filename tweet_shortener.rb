@@ -5,4 +5,15 @@ end
 
 def word_substituter (tweet)
   array = tweet.split(" ")
+  replacements = dictionary
+  
+  array.collect do |word|
+    
+    replacements.each do |key,val|
+      
+    if word.capitalize == (key.to_s).capitalize
+      word = val
+    end 
+    end 
+  end
 end 
