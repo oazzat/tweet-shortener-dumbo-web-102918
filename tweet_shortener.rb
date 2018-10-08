@@ -3,4 +3,4 @@ def dictionary
   for: "4", four: "4", be: "b", you: "u", at: "@", and: "&"}
 end 
 hash = dictionary
-puts hash[for]
+puts hash[:for]
